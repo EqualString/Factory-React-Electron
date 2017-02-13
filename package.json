@@ -1,0 +1,35 @@
+{
+ "name": "factory-app",
+ "productName": "Factory app",
+ "description": "Simple Factory application for message showcase built with Electron and ReactJS.",
+ "author": "Alen Egredžija <alen.egredzija@gmail.com>",
+ "version": "0.1.0",
+ "main": "main.js",
+ "devDependencies": {
+   "babel-core": "^6.8.0",
+   "babel-loader": "^6.2.4",
+   "babel-preset-es2015": "^6.6.0",
+   "babel-preset-react": "^6.5.0",
+   "css-loader": "^0.23.1",
+   "electron-packager": "^5.2.1",
+   "electron-rebuild": "^1.1.3",
+   "node-libs-browser": "^1.0.0",
+   "style-loader": "^0.13.1",
+   "file-loader": "^0.8.5",
+   "webpack": "^1.13.0",
+   "webpack-dev-server": "^1.14.1"
+ },
+ "scripts": {
+  "start": "./node_modules/.bin/electron .",
+  "watch": "./node_modules/.bin/webpack-dev-server",
+  "build": "electron-packager ./ --platform=darwin,win32 --arch=x64 --prune --overwrite"
+ },
+ "dependencies": {
+    "electron-prebuilt": "^0.37.2",
+	  "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.4.0",
+    "react-onclickout": "^2.0.4",
+    "redux": "^3.6.0"
+  }
+}
